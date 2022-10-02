@@ -18,8 +18,8 @@ class CategoryController extends Controller
      */
     public function index(Request $request)
     {
-        $user = $request->user();
-        $data = $user->categories()->get();
+        
+        $data = Category::all();
         return CategoryResource::collection($data);
     }
 

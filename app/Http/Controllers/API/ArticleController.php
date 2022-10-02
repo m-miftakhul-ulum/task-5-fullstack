@@ -16,8 +16,7 @@ class ArticleController extends Controller
      */
     public function index(Request $request)
     {
-        $user = $request->user();
-        $data = $user->Articles()->get();
+        $data = Article::all();
         return ArticleResource::collection($data);
     }
 
