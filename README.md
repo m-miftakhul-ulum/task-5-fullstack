@@ -3,7 +3,10 @@
 2. buat database
 3. buat file .env
 4. copy paste dari .env.example
-5. php artisan migrate
+5. ketik di terminal
+>```
+>php artisan migrate
+>```
 5. php artisan db:seed
 6. yarn & yarn watch
 
